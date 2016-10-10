@@ -20,10 +20,9 @@ Within your Amazon Instance make a directory called circos and navigate into it.
     wget http://circos.ca/distribution/circos-0.69-3.tgz 
     tar -xvzf circos-0.69-3.tgz 
 
-Circos runs within Perl and as such does not need to be compiled to run. So, we can just add the location of circos to our path variable. (Alternatively, you can also append this statement to the end of your ``.bashrc`` file)  
+Circos runs within Perl and as such does not need to be compiled to run. So, we can just add the location of circos to our path variable. (Alternatively, you can append this statement to the end of your ``.bashrc`` file)  
 ::
     export PATH=export PATH=~/circos/circos-0.69-3/bin:$PATH
-    
     
 It does, however, require quite a few additional modules 
 
