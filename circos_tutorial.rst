@@ -23,7 +23,7 @@ Within your Amazon Instance make a directory called circos and navigate into it.
 
 Circos runs within Perl and as such does not need to be compiled to run. So, we can just add the location of circos to our path variable. (Alternatively, you can append this statement to the end of your ``.bashrc`` file.)
 ::
-    export PATH=export PATH=~/circos/circos-0.69-3/bin:$PATH
+    export PATH=~/circos/circos-0.69-3/bin:$PATH
 
 Circos does, however, require quite a few additional perl modules to opperate correctly. To see what modules are missing and need to be downloaded type the following:
 ::
