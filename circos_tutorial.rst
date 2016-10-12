@@ -9,7 +9,7 @@ The goals of this tutorial are to:
 *  Install circos on your Ubuntu AWS system
 *  Use Circos to visualize our metagenomic data **fill me in **
 
-Note: Beyond this brief crash course , circos is very well-documented and has a great series of `tutorials  <http://circos.ca/documentation/tutorials/>` and `course <http://circos.ca/documentation/course/>` materials that are useful.
+Note: Beyond this brief crash course , circos is very well-documented and has a great series of `tutorials  <http://circos.ca/documentation/tutorials/>`__ and `course <http://circos.ca/documentation/course/>`__ materials that are useful.
 
 Installing Circos
 ==================================================
@@ -43,7 +43,7 @@ This will take a while to run. When it is done check that you now have all modul
 
 If you got all 'ok' then you are good to go!
 
-Many of you might have issues installing the GD module. Here is a work around (from `stackoverflow <http://stackoverflow.com/questions/31521570/perl-gd-module-wont-install>`) if GD did not happily install through CPAN.
+Many of you might have issues installing the GD module. Here is a work around (from `stackoverflow <http://stackoverflow.com/questions/31521570/perl-gd-module-wont-install>`__) if GD did not happily install through CPAN.
 ::
   mkdir tmp
   cd tmp
@@ -62,13 +62,17 @@ And with that, circos should be up and ready to go. Run the example by navigatin
   cd ~/circos/circos-0.69-3/example
   bash run
 
-This will take a little bit to run but should generate a file called ``circos.png``.  Open it and you can get an idea of the huge variety of things that are possible with circos and a lot of patience. We will not be attempting anything that complex today, however. 
+This will take a little bit to run but should generate a file called ``circos.png``.  Open it and you can get an idea of the huge variety of things that are possible with circos and a lot of patience. We will not be attempting anything that complex today, however.
+
+Compairing our assembly
+=======================
+Create a reference database for blastn:
+::
+  formatdb -p F -o T -i ../data2/eighth.fa
+
 
 References
 ===========
 * http://genome.cshlp.org/content/early/2009/06/15/gr.092759.109.abstract
 * http://circos.ca/documentation/tutorials
-*http://circos.ca/documentation/course/
-
-Acknowledgements
-=================
+* http://circos.ca/documentation/course/
